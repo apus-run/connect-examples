@@ -18,7 +18,7 @@ import (
 type GreetServer struct{}
 
 func (s *GreetServer) Greet(
-	ctx context.Context,
+	_ context.Context,
 	req *connect.Request[greetv1.GreetRequest],
 ) (*connect.Response[greetv1.GreetResponse], error) {
 	log.Println("Request headers: ", req.Header())
