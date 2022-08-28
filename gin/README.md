@@ -67,3 +67,9 @@ grpcurl \
 localhost:8800 \
 user.v1.UserService/Introduce
 ```
+
+## grpcui
+
+```shell
+grpcui -plaintext localhost:8800
+```
